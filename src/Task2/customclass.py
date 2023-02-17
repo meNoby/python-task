@@ -14,7 +14,7 @@ class Person:
 
     def print_info(self):
         attr = vars(self)
-        print('\n'.join("%s: %s" % item for item in attr.items()))
+        print('\n'.join("%s: %s" % item for item in attr.items()), "\n")
 
 
 class Employee(Person):
@@ -48,4 +48,3 @@ class Organization:
         print(f"\nHere's a detailed list of employees:")
         for item in employees:
             item.print_info()
-            print()
