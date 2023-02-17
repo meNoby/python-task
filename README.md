@@ -1,6 +1,6 @@
 # This is my python task #1 and #2 for Uni
 
-## >>> Task 1 review <<<
+## >>> Task #1 review <<<
 
 ### Requirements:
 1. Make a `Weather` class
@@ -48,7 +48,7 @@ def max_pressure_delta(arr):
 highest, lowest = max_pressure_delta(weather_list)
 ```
 
-## >>> Task 2 review <<<
+## >>> Task #2 review <<<
 
 ### Requirements:
 
