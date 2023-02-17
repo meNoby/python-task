@@ -5,7 +5,11 @@ weather_list = []
 
 # CREATE A LIST OF WEATHER ENTRIES
 for i in range(20):
-    weather_list.append(Weather(f"{i+1}.02.23", random.randint(-10, 10), random.randint(752, 767), "major" if random.random() > 0.8 else "minor" if random.random() > 0.5 else "none"))
+    rand_weather = Weather(f"{i+1}.02.23",
+                           random.randint(-10, 10),
+                           random.randint(752, 767),
+                           "major" if random.random() > 0.8 else "minor" if random.random() > 0.5 else "none")
+    weather_list.append(rand_weather)
 
 # LOWEST PRESSURE FOUND
 def max_pressure_delta(arr):
@@ -22,4 +26,4 @@ highest, lowest = max_pressure_delta(weather_list)
 for i in weather_list:
     print(i, "\n")
 
-print(f">>> Highest pressure delta days <<< \nhighest:\n{highest}\nlowest:\n {lowest}")
+print(f">>> Highest pressure delta days <<< \n Highest \n{highest}\n Lowest \n{lowest}")
